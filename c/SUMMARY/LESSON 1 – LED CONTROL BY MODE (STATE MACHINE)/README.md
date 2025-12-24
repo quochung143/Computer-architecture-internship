@@ -1,48 +1,47 @@
-```
-//================================================= 
+/=================================================
 
-Chủ đề: LED đa chế độ – chuyển mode bằng ngắt 
-
-//=================================================
-
-Yêu cầu
-
-Có 2 LED đơn
-
-Có 3 chế độ hoạt động:
+Topic: LED CONTROL BY MODE
 
 //=================================================
 
-Mode	LED1	LED2 
+Requirements
+
+There are 2 single LEDs
+
+There are 3 operating modes:
 
 //=================================================
 
-0	Tắt	Tắt
-
-1	sáng 1s	Tắt
-
-2	sáng 0.5s	tắt 0.5s
+Mode	LED1	LED2
 
 //=================================================
 
-Nhấn INT0 → chuyển mode (0 → 1 → 2 → 0)
+0	Off	Off
 
-Nhấn INT1 → chọn led
+1	On for 1s	Off
+
+2	On 0.5s	Off 0.5s
+
+//=================================================
+
+Press INT0 → change mode (0 → 1 → 2 → 0)
+
+Press INT1 → select LED
 
 
-UART in ra:
+UART output:
 
 //=================================================
 
 MODE1 = x
 
-MODE2 = 
+MODE2 = x
 
 //=================================================
 
-nhap format MX( sel-mode)
+Input format MX (select-mode)
 
-ex: 10 : led 1 mode 0 
+Example: 10 : LED 1 mode 0
 
 //=================================================
 
@@ -56,5 +55,4 @@ ERROR: Format MX, M=0-1, X=0-1-2
 //=================================================
 
 
-LED 7 đoạn hiển thị mode hiện tại
-```
+7-segment LED displays the current mode
