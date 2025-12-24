@@ -10,8 +10,8 @@ Có 3 chế độ hoạt động:
 Mode	LED1	LED2
 =================================================
 0	Tắt	Tắt
-1	Nháy 1s	Tắt
-2	Nháy 0.5s	Nháy 1s
+1	sáng 1s	Tắt
+2	sáng 0.5s	tắt 0.5s
 =================================================
 Nhấn INT0 → chuyển mode (0 → 1 → 2 → 0)
 Nhấn INT1 → chọn led
@@ -21,7 +21,15 @@ UART in ra:
 MODE1 = x
 MODE2 = x
 =================================================
+nhap format MX( sel-mode)
+ex: 10 : led 1 mode 0 
+=================================================
+10
+ok
 
+13
+ERROR: Format MX, M=0-1, X=0-1-2
+=================================================
 LED 7 đoạn hiển thị mode hiện tại
 
 Kỹ thuật bắt buộc
